@@ -2,12 +2,10 @@
 	"name": "cloudflare-saas-stack",
 	"scripts": {
 		"build": "remix vite:build",
-		"cf-typegen": "wrangler types",
 		"deploy": "bun run build && wrangler deploy",
 		"dev:frontend": "remix vite:dev",
 		"dev": "bun run build && wrangler dev",
 		"format": "biome check --write .",
-		"preview": "bun run build && wrangler dev",
 		"start": "wrangler dev",
 		"typecheck": "tsc",
 		"typegen": "wrangler types",
